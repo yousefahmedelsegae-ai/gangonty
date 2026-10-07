@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد ميلاد جنجونتي ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- شاشة الباسورد -->
+    <div id="loginScreen" class="screen">
+        <div class="box">
+            <div class="heart">❤️</div>
+
+            <h1>مفاجأة لجنجونتي 🎁</h1>
+            <p>المفاجأة دي ليكي إنتي بس ❤️</p>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="اكتبي الباسورد"
+            >
+
+            <button onclick="checkPassword()">
+                دخول ❤️
+            </button>
+
+            <p id="error"></p>
+        </div>
+    </div>
+
+
+    <!-- الصفحة الرئيسية -->
+    <div id="mainScreen" class="screen hidden">
+
+        <div class="content">
+
+            <div class="floating-hearts">
+                ❤️ 💗 ❤️ 💕 ❤️
+            </div>
+
+            <h1>
+                كل سنة وانتي طيبة يا جنجونتي 👸🏻💗
+            </h1>
+
+            <!-- الصورة -->
+            <div class="photo-box">
+                <img
+                    src="gengonty.jpg"
+                    alt="Gngonty"
+                >
+            </div>
+
+
+            <!-- الأغنية -->
+            <div class="music-box">
+
+                <h2>🎵 أغنيتنا ❤️</h2>
+
+                <audio controls>
+                    <source src="song.mp3" type="audio/mpeg">
+                </audio>
+
+            </div>
+
+
+            <!-- عداد العمر -->
+            <div class="age-box">
+
+                <h2>
+                    🎂 يوم اتولدت فيه أحلى شخص في حياتي ❤️
+                </h2>
+
+                <p class="birth-date">
+                    10 / 10 / 2010 ❤️
+                </p>
+
+                <div id="ageCounter">
+
+                    <div class="counter-item">
+                        <span id="years">0</span>
+                        <small>سنة</small>
+                    </div>
+
+                    <div class="counter-item">
+                        <span id="months">0</span>
+                        <small>شهر</small>
+                    </div>
+
+                    <div class="counter-item">
+                        <span id="days">0</span>
+                        <small>يوم</small>
+                    </div>
+
+                    <div class="counter-item">
+                        <span id="hours">0</span>
+                        <small>ساعة</small>
+                    </div>
+
+                    <div class="counter-item">
+                        <span id="minutes">0</span>
+                        <small>دقيقة</small>
+                    </div>
+
+                    <div class="counter-item">
+                        <span id="seconds">0</span>
+                        <small>ثانية</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- الرسالة -->
+            <div class="message">
+
+                <p>
+                    كل سنه وانتي طيبه ياحبيبت دادي وعقبال 100 سنه وانتي بصحه وسلامه وديما بقرفك وبضايقك وبعصبك بس في الاول وفي الاخر ملناش غير بعض بردو♥️
+                </p>
+
+                <p>
+                    مهما نلف وندور علي بعض أنا وانتي محدش فينا هيبعد عن التاني انتي كل حاجه بالنسبالي ياجنجونتي واعتبرتك اول حب ليا العلاقه الاولى دي محسبتهاش أن هيه دخلت حياتي اصلا
+                </p>
+
+                <p>
+                    انتي ال بجد تستاهلي يتقال ليكي كل كلام حلو لان بجد انتي شخصيه كويسه وتتحبي واستحملتيني كتير ولسه مكمله♥️
+                </p>
+
+                <p>
+                    ربنا يخليكي ليا ياماما وميحرمنيس منك ابدا يارب
+                </p>
+
+                <p>
+                    وبجد مبسوط اني اكتر انسانه بحبها بتكبر قدامي ♥️💗 وهتفضلي ديما اميرتي وبنوتي العمر ده بالنسبالي ولا حاجه هفضل اعاملك اكنك صغنونه.
+                </p>
+
+                <p>
+                    حقيقي بحب فيكي كل حاجه وبحب ضحكتك اوي علفكره وبحب كلامنا كول وقت الهدوء وبيبقى صوتك حلو اوييييييي بجد.
+                </p>
+
+                <p>
+                    ربنا ميحرمنيش من يا احلا حاجه في حياتي ويخليكي ليا يارب يارب
+                </p>
+
+                <p>
+                    وعايزك تشدي كويس السنتين دول عايزك تبقي احسن مني مش هتنزال عن ان مراتي تبقي دكتوره مفهوم 👩🏻‍⚕️❤️
+                </p>
+
+                <p class="final-message">
+                    كل سنه وانتي طيبه ياجنجونتي 👸🏻💗
+                </p>
+
+            </div>
+
+
+            <!-- المفاجأة -->
+            <button
+                class="surprise-button"
+                onclick="showSurprise()"
+            >
+                اضغطي هنا يا جنجونتي 🎁❤️
+            </button>
+
+            <div id="surprise" class="hidden surprise">
+                بحبك يا جنجونتي ❤️
+                <br>
+                وعيد ميلاد سعيد يا أجمل حاجة في حياتي 💗
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
