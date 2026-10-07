@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #ff758c,
+        #ff7eb3
+    );
+
+    color: white;
+    min-height: 100vh;
+}
+
+.screen {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* شاشة الباسورد */
+
+.box {
+    background: rgba(255,255,255,0.18);
+
+    backdrop-filter: blur(10px);
+
+    padding: 35px 25px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    width: 100%;
+    max-width: 380px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.heart {
+    font-size: 60px;
+    animation: beat 1s infinite;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+input {
+    width: 100%;
+
+    padding: 15px;
+
+    margin: 15px 0;
+
+    border: none;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    font-size: 17px;
+
+    outline: none;
+}
+
+button {
+    border: none;
+
+    padding: 14px 25px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    color: #ff4f81;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
+
+#error {
+    color: #ffe5e5;
+
+    font-weight: bold;
+}
+
+
+/* المحتوى */
+
+.content {
+    width: 100%;
+
+    max-width: 650px;
+
+    text-align: center;
+
+    padding: 25px 10px;
+}
+
+
+/* الصورة */
+
+.photo-box {
+    width: 100%;
+
+    margin: 25px 0;
+
+    padding: 10px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.15);
+}
+
+.photo-box img {
+    width: 100%;
+
+    max-width: 400px;
+
+    border-radius: 25px;
+
+    display: block;
+
+    margin: auto;
+}
+
+
+/* الصوت */
+
+.music-box {
+    background: rgba(255,255,255,0.15);
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+}
+
+audio {
+    width: 100%;
+}
+
+
+/* العداد */
+
+.age-box {
+    background: rgba(255,255,255,0.15);
+
+    padding: 20px;
+
+    border-radius: 25px;
+
+    margin-bottom: 25px;
+}
+
+.age-box h2 {
+    margin-top: 0;
+
+    font-size: 22px;
+}
+
+.birth-date {
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+#ageCounter {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.counter-item {
+    background: rgba(255,255,255,0.2);
+
+    border-radius: 15px;
+
+    padding: 12px 8px;
+
+    min-width: 75px;
+}
+
+.counter-item span {
+    display: block;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.counter-item small {
+    font-size: 13px;
+}
+
+
+/* الرسالة */
+
+.message {
+    background: rgba(255,255,255,0.15);
+
+    padding: 20px;
+
+    border-radius: 25px;
+
+    text-align: right;
+
+    line-height: 2;
+
+    font-size: 17px;
+}
+
+.message p {
+    margin-bottom: 25px;
+}
+
+.final-message {
+    text-align: center;
+
+    font-size: 23px;
+
+    font-weight: bold;
+}
+
+
+/* المفاجأة */
+
+.surprise-button {
+    margin-top: 25px;
+}
+
+.surprise {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.2);
+
+    border-radius: 25px;
+
+    font-size: 22px;
+
+    line-height: 2;
+}
+
+
+/* القلوب */
+
+.floating-hearts {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+
+    animation: float 2s infinite alternate;
+}
+
+
+/* الحركات */
+
+@keyframes beat {
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes float {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+  }
